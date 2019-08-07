@@ -1,0 +1,22 @@
+{
+  "name": "angularjs15",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "angular": "1.5.11",
+    "pcln-design-system": "2.1.3",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react2angular": "4.0.6"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

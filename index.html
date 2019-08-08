@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Parcel Sandbox</title>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <script src="src/index.js"></script>
-  </head>
+</head>
 
-  <body>
-    <div ng-app="HelloWorldApp">
-      <div ng-controller="HelloWorldController">
-        <h1>{{greeting}}</h1>
-      </div>
-      <theme-provider><box></box></theme-provider>
+<body>
+<div ng-app="HelloWorldApp">
+    <div ng-controller="HelloWorldController">
+        <p>{{greeting}}</p>
     </div>
-  </body>
+    <theme-provider>
+
+    </theme-provider>
+    <my-text color="blue">beautiful day</my-text>
+</div>
+</body>
 </html>

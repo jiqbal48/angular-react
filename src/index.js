@@ -10,12 +10,10 @@ const controller = ($scope) => {
 
 const SurveyCards = ({config}) => {
     console.log('config in react comp:', config);
-    const apple = {mouse: 'mouse tech'};
-    console.log('local apple: ', apple);
     return (
         <ThemeProvider>
             <Box p={3} bg='#fff6da'>
-                <Text color="blue">hi yes apple {apple.mouse}</Text>
+                <Text color="blue">hi {config.name}</Text>
             </Box>
         </ThemeProvider>
     );

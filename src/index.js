@@ -15,7 +15,7 @@ const SurveyCards = ({config}) => {
     return (
         <ThemeProvider>
             <Box p={3} bg='#fff6da'>
-                <Text color="blue">hi yes apple</Text>
+                <Text color="blue">hi yes apple {apple.mouse}</Text>
             </Box>
         </ThemeProvider>
     );

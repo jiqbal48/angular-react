@@ -4,7 +4,16 @@ import {react2angular} from "react2angular";
 import {ThemeProvider, Box, Text} from "pcln-design-system";
 
 const controller = ($scope) => {
-    $scope.data = {url: 'https://news.ycombinator.com'};
+    const name = "bob";
+    const url = "news.ycombinator.com";
+    const sayHi = (name) => {
+        alert('Hi ' + name + '!');
+    };
+    $scope.config = {
+        name,
+        url,
+        sayHi
+    };
 };
 
 
@@ -13,7 +22,7 @@ const SurveyCards = ({config}) => {
     return (
         <ThemeProvider>
             <Box p={3} bg='#fff6da'>
-                <Text color="blue">hi {config.name}</Text>
+                <Text color="blue" onClick={(name) => config.sayHi(name)}>hi {config.name}</Text>
             </Box>
         </ThemeProvider>
     );

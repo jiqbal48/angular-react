@@ -19,10 +19,12 @@ const controller = ($scope) => {
 
 const SurveyCards = ({config}) => {
     const [name] = useState(config.name);
+    console.log(name);
+
     return (
         <ThemeProvider>
             <Box p={3} bg='#fff6da'>
-                <Text color="blue" onClick={() => config.sayHi(name)}>hi {config.name}</Text>
+                <Text color="blue" onClick={() => config.sayHi(config.name + 'by')}>hi {config.name}</Text>
             </Box>
         </ThemeProvider>
     );

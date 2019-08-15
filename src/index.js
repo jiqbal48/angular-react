@@ -1,5 +1,5 @@
 import {module} from "angular";
-import React from "react";
+import React, {useState} from "react";
 import {react2angular} from "react2angular";
 import {ThemeProvider, Box, Text} from "pcln-design-system";
 
@@ -7,7 +7,7 @@ const controller = ($scope) => {
     const name = "bob";
     const url = "news.ycombinator.com";
     const sayHi = (name) => {
-        alert('Hi ' + name + '!');
+        alert('whale hello there ' + name + '!');
     };
     $scope.config = {
         name,
@@ -18,11 +18,11 @@ const controller = ($scope) => {
 
 
 const SurveyCards = ({config}) => {
-    console.log('config in react comp:', config);
+    const [name] = useState(config.name);
     return (
         <ThemeProvider>
             <Box p={3} bg='#fff6da'>
-                <Text color="blue" onClick={(name) => config.sayHi(name)}>hi {config.name}</Text>
+                <Text color="blue" onClick={() => config.sayHi(name)}>hi {config.name}</Text>
             </Box>
         </ThemeProvider>
     );

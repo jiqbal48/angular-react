@@ -23,7 +23,7 @@ const SurveyCards = ({config}) => {
 
     return (
         <ThemeProvider>
-            <Box p={3} bg='#fff6da'>
+            <Box p={3} bg='#fff6da' style={{border: '2px solid green', borderRadius: '10px'}}>
                 <Text color="blue" onClick={() => config.sayHi(config.name + 'by')}>hi {config.name}</Text>
             </Box>
         </ThemeProvider>
